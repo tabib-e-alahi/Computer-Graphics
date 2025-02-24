@@ -22,8 +22,8 @@ void drawShapes(void)
         glBegin(GL_POINTS);
         glVertex2i(x, y);
         glVertex2i(-x, y);
-        glVertex2i((-1) *x,(-1) *y);
-        glVertex2i(x, (-1) *y);
+        glVertex2i(-x,-y);
+        glVertex2i(x, -y);
 
         glVertex2i(y, x);
         glVertex2i((-1) * y, x);
