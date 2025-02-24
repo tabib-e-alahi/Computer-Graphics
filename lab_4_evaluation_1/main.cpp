@@ -17,7 +17,7 @@ void drawShapes(void)
     glColor3f(0.0, 0.0, 0.0);
     glPointSize(10.0);
 
-     glColor3f(0.722, 0.557, 0.043);
+     glColor3f(0.822, 0.557, 0.043);
         glBegin(GL_POLYGON);
         glVertex2i(-560, 300);
         glVertex2i(-500, 300);
