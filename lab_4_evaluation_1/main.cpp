@@ -98,7 +98,7 @@ void drawShapes(void)
     }
 
 
-    glFlush();	// Process all OpenGL routines
+    glFlush();
 }
 int main(int argc, char* argv[])
 {
@@ -107,16 +107,16 @@ int main(int argc, char* argv[])
     y = r;
     p = 1 - r;
 
-    glutInit(&argc, argv);						// Initalise GLUT
-    glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);	// Set display mode
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
 
-    glutInitWindowPosition(100, 100);				// Set window position
-    glutInitWindowSize(350, 350);					// Set window size
-    glutCreateWindow("An Example OpenGL Program");	// Create display window
+    glutInitWindowPosition(100, 100);
+    glutInitWindowSize(350, 350);
+    glutCreateWindow("An Example OpenGL Program");
 
-    init();							// Execute initialisation procedure
-    glutDisplayFunc(drawShapes);		// Send graphics to display window
-    glutMainLoop();					// Display everything and wait
+    init();
+    glutDisplayFunc(drawShapes);
+    glutMainLoop();
 
     return 0;
 }
