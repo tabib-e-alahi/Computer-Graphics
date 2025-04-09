@@ -126,6 +126,61 @@ void house5()
     glVertex2i(552, 662);
     glEnd();
 
+    //upper quad left section---------
+    for(int i = 0; i < 5; i++)
+    {
+        glColor3f(0.0, 0.0, 0.0);
+        glBegin(GL_POLYGON);
+        glVertex2i(576, 546 + (i * 24));
+        glVertex2i(588, 546 + (i * 24));
+        glVertex2i(588, 558 + (i * 24));
+        glVertex2i(576, 558 + (i * 24));
+        glEnd();
+    }
+
+    for(int i = 0; i < 5; i++)
+    {
+        glColor3f(0.0, 0.0, 0.0);
+        glBegin(GL_POLYGON);
+        glVertex2i(558, 546 + (i * 24));
+        glVertex2i(570, 546 + (i * 24));
+        glVertex2i(570, 558 + (i * 24));
+        glVertex2i(558, 558 + (i * 24));
+        glEnd();
+    }
+
+    //upper quad middle line
+    glColor3f(0.0, 0.0, 0.0);
+        glBegin(GL_LINES);
+        glVertex2i(594, 660);
+        glVertex2i(594, 540);
+        glEnd();
+
+      //upper quad right section---------
+        for(int i = 0; i < 5; i++)
+    {
+        glColor3f(0.0, 0.0, 0.0);
+        glBegin(GL_POLYGON);
+        glVertex2i(600, 546 + (i * 24));
+        glVertex2i(618, 546 + (i * 24));
+        glVertex2i(618, 558 + (i * 24));
+        glVertex2i(600, 558 + (i * 24));
+        glEnd();
+    }
+
+    for(int i = 0; i < 5; i++)
+    {
+        glColor3f(0.0, 0.0, 0.0);
+        glBegin(GL_POLYGON);
+          glVertex2i(624, 546 + (i * 24));
+        glVertex2i(642, 546 + (i * 24));
+        glVertex2i(642, 558 + (i * 24));
+        glVertex2i(624, 558 + (i * 24));
+        glEnd();
+    }
+
+
+
 }
 
 void house6()
@@ -189,28 +244,28 @@ void house7()
 
     //floor dividors lines
     glColor3f(0, 0, 0);
-        glBegin(GL_LINES);
-        glVertex2i(852, 408);
-        glVertex2i(990, 408);
-        glEnd();
+    glBegin(GL_LINES);
+    glVertex2i(852, 408);
+    glVertex2i(990, 408);
+    glEnd();
 
-         glColor3f(0, 0, 0);
-        glBegin(GL_LINES);
-        glVertex2i(990, 408);
-        glVertex2i(1014, 426);
-        glEnd();
+    glColor3f(0, 0, 0);
+    glBegin(GL_LINES);
+    glVertex2i(990, 408);
+    glVertex2i(1014, 426);
+    glEnd();
 
-        glColor3f(0, 0, 0);
-        glBegin(GL_LINES);
-        glVertex2i(852, 366);
-        glVertex2i(990, 366);
-        glEnd();
+    glColor3f(0, 0, 0);
+    glBegin(GL_LINES);
+    glVertex2i(852, 366);
+    glVertex2i(990, 366);
+    glEnd();
 
-        glColor3f(0, 0, 0);
-        glBegin(GL_LINES);
-        glVertex2i(990, 366);
-        glVertex2i(1014, 384);
-        glEnd();
+    glColor3f(0, 0, 0);
+    glBegin(GL_LINES);
+    glVertex2i(990, 366);
+    glVertex2i(1014, 384);
+    glEnd();
 }
 
 void drawShapes(void)
