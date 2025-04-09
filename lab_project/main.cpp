@@ -11,11 +11,10 @@ void init(void)
     gluOrtho2D(0, 1080, 0.0, 780.0);
 }
 
-void houses()
+void house1()
 {
-    // H1 ------------
     //quad -1
-    glColor4f(0.361, 0.357, 0.349, 0.49);
+    glColor3f(0.831, 0.827, 0.576);
     glBegin(GL_POLYGON);
     glVertex2i(6, 300);
     glVertex2i(30, 300);
@@ -24,7 +23,7 @@ void houses()
     glEnd();
 
     //quad -2
-    glColor3f(0.149, 0.145, 0.137);
+    glColor3f(1, 0.996, 0.867);
     glBegin(GL_POLYGON);
     glVertex2i(30, 300);
     glVertex2i(132, 300);
@@ -33,7 +32,7 @@ void houses()
     glEnd();
 
     //quad -3
-    glColor4f(0.361, 0.357, 0.349, 0.49);
+    glColor3f(0.831, 0.827, 0.576);
     glBegin(GL_POLYGON);
     glVertex2i(30, 450);
     glVertex2i(132, 450);
@@ -42,15 +41,8 @@ void houses()
     glEnd();
 }
 
-void drawShapes(void)
+void house2()
 {
-    glClear(GL_COLOR_BUFFER_BIT);	// Clear display window
-    glColor3f(0.0, 0.0, 0.0);
-    glPointSize(10.0);
-
-
-houses();
-    // H2 ------------
     //quad -1
     glColor3f(0.722, 0.557, 0.043);
     glBegin(GL_POLYGON);
@@ -68,7 +60,10 @@ houses();
     glVertex2i(270, 372);
     glVertex2i(156, 372);
     glEnd();
+}
 
+void house3()
+{
     // H3 ------------
     //quad -1
     glColor3f(0.122, 0.357, 0.743);
@@ -87,8 +82,10 @@ houses();
     glVertex2i(390, 396);
     glVertex2i(300, 396);
     glEnd();
+}
 
-    // H4 ------------
+void house4()
+{
     //quad -1
     glColor3f(0.122, 0.357, 0.743);
     glBegin(GL_POLYGON);
@@ -107,7 +104,10 @@ houses();
     glVertex2i(408, 450);
     glEnd();
 
-    // H5 ------------
+}
+
+void house5()
+{
     //quad -1
     glColor3f(0.122, 0.357, 0.743);
     glBegin(GL_POLYGON);
@@ -126,7 +126,10 @@ houses();
     glVertex2i(552, 662);
     glEnd();
 
-    // H6 ------------
+}
+
+void house6()
+{
     //quad -1
     glColor3f(0.122, 0.357, 0.743);
     glBegin(GL_POLYGON);
@@ -153,8 +156,10 @@ houses();
     glVertex2i(852, 498);
     glVertex2i(738, 498);
     glEnd();
+}
 
-    // H7 ------------
+void house7()
+{
     //quad -1
     glColor3f(0.122, 0.357, 0.743);
     glBegin(GL_POLYGON);
@@ -182,6 +187,46 @@ houses();
     glVertex2i(876, 468);
     glEnd();
 
+    //floor dividors lines
+    glColor3f(0, 0, 0);
+        glBegin(GL_LINES);
+        glVertex2i(852, 408);
+        glVertex2i(990, 408);
+        glEnd();
+
+         glColor3f(0, 0, 0);
+        glBegin(GL_LINES);
+        glVertex2i(990, 408);
+        glVertex2i(1014, 426);
+        glEnd();
+
+        glColor3f(0, 0, 0);
+        glBegin(GL_LINES);
+        glVertex2i(852, 366);
+        glVertex2i(990, 366);
+        glEnd();
+
+        glColor3f(0, 0, 0);
+        glBegin(GL_LINES);
+        glVertex2i(990, 366);
+        glVertex2i(1014, 384);
+        glEnd();
+}
+
+void drawShapes(void)
+{
+    glClear(GL_COLOR_BUFFER_BIT);	// Clear display window
+    glColor3f(0.0, 0.0, 0.0);
+    glPointSize(10.0);
+
+
+    house1();
+    house2();
+    house4();
+    house3();
+    house5();
+    house6();
+    house7();
 
     //==== Footpath - 1
     glColor3f(0.9, 0.857, 0.943);
@@ -211,7 +256,7 @@ houses();
     }
 
     // Road - 1:
-     glColor3f(0.9, 0.9, 0.9);
+    glColor3f(0.9, 0.9, 0.9);
     glBegin(GL_POLYGON);
     glVertex2i(0, 198);
     glVertex2i(1080, 198);
